@@ -1,0 +1,103 @@
+<% layout('/layouts/boilerplate') %>
+
+<!-- HERO SECTION -->
+<section class="hero-section">
+    <div class="hero-overlay">
+        <div class="container text-center text-white">
+            <h1 class="display-2 fw-bold mb-4">
+                Find Your Next 
+                <span class="highlight-text">Adventure</span>
+            </h1>
+
+            <p class="lead mb-5 hero-subtext">
+                Discover <strong>unique stays</strong>, connect with 
+                <strong>trusted hosts</strong>, and explore the world 
+                with confidence.
+            </p>
+
+            <% if (!currUser) { %>
+                <a href="/signup" class="btn btn-light btn-lg hero-btn me-3">Get Started</a>
+                <a href="/login" class="btn btn-outline-light btn-lg hero-btn">Login</a>
+            <% } else { %>
+                <a href="/listings" class="btn btn-light btn-lg hero-btn me-3">Explore Listings</a>
+                <a href="/logout" class="btn btn-outline-light btn-lg hero-btn">Logout</a>
+            <% } %>
+        </div>
+    </div>
+</section>
+
+<!-- WHY SECTION -->
+<section class="py-5 bg-light">
+    <div class="container text-center">
+        <h2 class="mb-5 section-title">Why Choose Wanderlust?</h2>
+
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="feature-card">
+                    <i class="fa-solid fa-shield-halved feature-icon"></i>
+                    <h4>Verified Listings</h4>
+                    <p>Every property is carefully reviewed to ensure quality and trust.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="feature-card">
+                    <i class="fa-solid fa-users feature-icon"></i>
+                    <h4>Trusted Community</h4>
+                    <p>Connect with hosts and travelers from around the world.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="feature-card">
+                    <i class="fa-solid fa-bolt feature-icon"></i>
+                    <h4>Seamless Booking</h4>
+                    <p>Simple, secure, and hassle-free experience from start to finish.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="py-5">
+    <div class="container text-center">
+        <h2 class="mb-5 section-title">How It Works</h2>
+
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="step-card">
+                    <h5>1. Create an Account</h5>
+                    <p>Sign up and join our growing travel community.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="step-card">
+                    <h5>2. Explore Listings</h5>
+                    <p>Browse through amazing places across different locations.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="step-card">
+                    <h5>3. Book & Enjoy</h5>
+                    <p>Plan your trip and create unforgettable memories.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA SECTION -->
+<section class="cta-section text-center text-white py-5">
+    <div class="container">
+        <h2 class="mb-4">Ready to Start Your Journey?</h2>
+
+        <% if (!currUser) { %>
+            <a href="/signup" class="btn btn-light btn-lg hero-btn">Join Wanderlust Today</a>
+        <% } else { %>
+            <a href="/listings" class="btn btn-light btn-lg hero-btn">Start Exploring</a>
+        <% } %>
+    </div>
+</section>

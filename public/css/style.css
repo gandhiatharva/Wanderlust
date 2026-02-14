@@ -1,4 +1,4 @@
-.body{
+body{
     font-family: "Plus Jakarta Sans", sans-serif !important;
     display: flex;
     flex-direction: column;
@@ -147,6 +147,127 @@
     padding-left:0 ;
     padding-right: 0;
 }
+
+
+/* LANDING PAGE */
+
+.home-hero {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+    ),
+    url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+/* ===== HERO SECTION ===== */
+
+.hero-section {
+    height: 100vh;
+    background: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.55);
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.highlight-text {
+    color: #ffdd57;
+}
+
+.hero-subtext {
+    font-size: 1.3rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.hero-btn {
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+    transform: translateY(-4px);
+}
+
+/* ===== SECTION TITLES ===== */
+
+.section-title {
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #fe424d;
+    margin: 10px auto 0;
+    border-radius: 5px;
+}
+
+/* ===== FEATURE CARDS ===== */
+
+.feature-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.feature-icon {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #fe424d;
+}
+
+/* ===== STEP CARDS ===== */
+
+.step-card {
+    padding: 25px;
+    border-radius: 12px;
+    background: #f8f9fa;
+    transition: 0.3s ease;
+}
+
+.step-card:hover {
+    background: white;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transform: translateY(-6px);
+}
+
+/* ===== CTA SECTION ===== */
+
+.cta-section {
+    background: linear-gradient(135deg, #fe424d, #ff6b6b);
+}
+
 
 
 
